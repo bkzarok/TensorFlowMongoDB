@@ -38,3 +38,6 @@ def apply_sentiment(horoscope):
 df = pd.read_csv("anaiya-six-months-horoscopes.csv")
 
 df["sentiment"] =  df["horoscope"].apply(apply_sentiment)
+
+df.to_csv("anaiya-six-months-horoscopes-sentiment.csv")
+print("saved to new file called anaiya-six-months-horoscopes-sentiment.csv")
